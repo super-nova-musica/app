@@ -26,7 +26,7 @@ export default function ho () {
     try {
       // const response = await axios({
       //   method: 'post',
-      //   url: 'https://mega-hack-api.herokuapp.com/companyLogin',
+      //   url: 'https://code-stage-master-id8lsqxg3t81.herokuapp.com/artist',
       //   data
       // })
       navigation.navigate('ListMusicsMusico')
