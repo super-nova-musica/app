@@ -33,7 +33,9 @@ export default function ho () {
         <Text style={Styles.textOu}>
             ou
         </Text>
-        <TouchableOpacity >
+        <TouchableOpacity 
+          onPress={() => navigation.navigate('LoginMusico')}
+        >
           <Text style={Styles.textButton2}>
               Logar como musico
           </Text>
