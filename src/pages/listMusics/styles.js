@@ -49,44 +49,67 @@ export default StyleSheet.create({
     paddingLeft: 20,
     color: '#8C31FF'
   },
-  list:{
-    display:'flex',
+  listPopular:{
+    display: 'flex',
     flexDirection: 'row',
-    backgroundColor: '#FAFAFA',
-    borderBottomColor: '#B3B3B3',
-    borderBottomWidth: 1,
-    paddingTop: 10,
-    paddingBottom: 10
+    padding: 10,    
+    backgroundColor: '#fff',
+    marginLeft: 5,
   },
-  listMenu: {
-    fontSize: 16,
-    width: '25%',
-    textAlign: 'center',
-    color: "#8C8C8C"
-  },
-  listMenuSalas:{
-    fontSize: 16,
-    width: '25%',
-    textAlign: 'center',
+  popular:{
+    color: 'black',
+    fontSize: 22,
     fontWeight: 'bold',
-    color: '#8C31FF'
   },
-  geners:{
-    display:'flex',
-    width: '100%',
+  verTodas:{
+    color: '#8C31FF',
+    fontSize: 18,
+    marginLeft: 'auto',
+    marginRight: 10,
+  },
+  listMusics: {
+    backgroundColor: '#FFFFFF',
+    borderTopWidth: 1,
+    borderColor: '#8C8C8C',
+    padding: 5,
+    display: 'flex',
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    backgroundColor: '#fff'
+    alignItems: 'center'
+  },
+  city:{
+    color: '#8C8C8C',
+    paddingTop: 2,
+
+  },
+  name:{
+    color: '#8C31FF',
+    paddingTop: 2,
+
+  },
+  views:{
+    color: '#8C8C8C',
+    paddingTop: 2,
   },
   images:{
-    width: '50%',
-    marginTop: 20,
-    
+    marginLeft: 5,
+    marginRight: 15
   },
-  images2:{
+  more:{
     marginLeft: 'auto',
-    marginRight: 'auto',
-    borderRadius: 10,
-    width: '97%',
+    marginRight: 10,
+    display: 'flex',
+    alignSelf: "flex-end"
+  },
+  moreIcon:{
+    marginTop: 15
+  },
+  newMusic: {
+    padding: 5,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 10,
+    marginTop: 10,
+    marginBottom: 10
   }
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, Text, Button, TextInput, TouchableOpacity,SafeAreaView  } from 'react-native'
+import { View, Image, Text, Button, TextInput, TouchableOpacity ,SafeAreaView  } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { LinearGradient } from 'expo-linear-gradient' 
 import { AntDesign } from '@expo/vector-icons'; 
@@ -36,14 +36,56 @@ export default function ho () {
         </View>
       </View>
       <View style={Styles.geners}>
-        <Image source={geners1} style={Styles.images}/>
-        <Image source={geners2} style={Styles.images}/>
-        <Image source={geners3} style={Styles.images}/>
-        <Image source={geners4} style={Styles.images}/>
-        <Image source={geners5} style={Styles.images}/>
-        <Image source={geners6} style={Styles.images}/>
-        <Image source={geners5} style={Styles.images}/>
-        <Image source={geners6} style={Styles.images}/>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('Player')}
+        >
+          <Image source={geners1} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners2} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners3} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners4} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners5} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners6} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners5} style={Styles.images2}/>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={Styles.images}
+          onPress={() => navigation.navigate('ListMusics')}
+        >
+          <Image source={geners6} style={Styles.images2}/>
+        </TouchableOpacity>
+
+
       </View>
     </SafeAreaView>
 
