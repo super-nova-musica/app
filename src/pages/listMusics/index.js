@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { View, Text, FlatList, StyleSheet,Image, SafeAreaView,TextInput, TouchableOpacity } from 'react-native';
-import { AntDesign, Feather  } from '@expo/vector-icons';
+import { AntDesign, Feather, FontAwesome  } from '@expo/vector-icons';
 import Styles from './styles'
 import { useNavigation } from '@react-navigation/native'
 import Cover from '../../assets/Cover.png'
