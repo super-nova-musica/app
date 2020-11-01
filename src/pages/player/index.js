@@ -32,15 +32,42 @@ export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          count: 0
+          count: 0,
+          like:0
         };
     }
     render(){
         return (
             <SafeAreaView style={Styles.container}>
+                
                 <Image source={Cover3} style={Styles.header}/>
                 <View style={Styles.playerInfos}>
-                    <FontAwesome name="heart-o" size={34} color="#8C31FF" style={Styles.playerLike}/>
+                    {this.state.like === 1 ?
+                        <TouchableOpacity 
+                            style={Styles.listMusics}
+                            onPress={() => this.setState({ like: 0})} 
+                        >
+                            <FontAwesome 
+                            name="heart"
+                            size={34}
+                            color="#8C31FF"
+                            style={Styles.playerLike}
+                        /> 
+                        </TouchableOpacity>
+                        : 
+                        <TouchableOpacity 
+                            style={Styles.listMusics}
+                            onPress={() => this.setState({ like: 1})} 
+                        >
+                            <FontAwesome 
+                            name="heart-o"
+                            size={34}
+                            color="#8C31FF"
+                            style={Styles.playerLike}
+                        /> 
+                        </TouchableOpacity>
+                
+                    }
                     <View style={Styles.playerTextView}>
                         <Text style={Styles.playerText}>
                             Is It Cold In The Water?

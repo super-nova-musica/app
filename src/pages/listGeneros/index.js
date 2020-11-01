@@ -38,7 +38,7 @@ export default function ho () {
       <View style={Styles.geners}>
         <TouchableOpacity 
           style={Styles.images}
-          onPress={() => navigation.navigate('Player')}
+          onPress={() => navigation.navigate('ListMusics')}
         >
           <Image source={geners1} style={Styles.images2}/>
         </TouchableOpacity>

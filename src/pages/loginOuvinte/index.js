@@ -18,7 +18,7 @@ export default function ho () {
 
       <View style={Styles.header}>
         <Image source={Play} style={Styles.image}/>
-        <Text style={Styles.title}>Nome do Projeto</Text>
+        <Text style={Styles.title}></Text>
       </View>
         <Text style={Styles.text}>
           Cadastre-se para compartilhar a sua música do dia com seus amigos e
