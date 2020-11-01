@@ -8,6 +8,7 @@ import ListGeneros from './pages/listGeneros'
 import ListMusics from './pages/listMusics'
 import Player from './pages/player'
 import LoginMusico from './pages/loginMusico'
+import ListMusicsMusico from './pages/listMusicsMusico'
 
 
 const AppStack = createStackNavigator()
@@ -23,6 +24,8 @@ export default function Routes () {
         <AppStack.Screen name='ListMusics' component={ListMusics} />
         <AppStack.Screen name='Player' component={Player} />
         <AppStack.Screen name='LoginMusico' component={LoginMusico} />
+        <AppStack.Screen name='ListMusicsMusico' component={ListMusicsMusico} />
+
 
 
 

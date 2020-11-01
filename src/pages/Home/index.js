@@ -37,7 +37,7 @@ export default function ho () {
           onPress={() => navigation.navigate('LoginMusico')}
         >
           <Text style={Styles.textButton2}>
-              Logar como musico
+              Logar como artista
           </Text>
         </TouchableOpacity>
 

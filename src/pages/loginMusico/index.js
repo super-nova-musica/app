@@ -29,7 +29,7 @@ export default function ho () {
       //   url: 'https://mega-hack-api.herokuapp.com/companyLogin',
       //   data
       // })
-      navigation.navigate('Scan')
+      navigation.navigate('ListMusicsMusico')
     } catch (error) {
       setTrue(true)
     }
@@ -65,7 +65,7 @@ export default function ho () {
             <TouchableOpacity  onPress={handleGoBack}>
               <Text style={Styles.textButton2}>Voltar</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={Styles.button} onPress={handleNavigateToScan} title="Entrar">
+            <TouchableOpacity style={Styles.button} onPress={()=> navigation.navigate('ListMusicsMusico')} title="Entrar">
               <Text style={Styles.textButton}>Entrar</Text>
             </TouchableOpacity>
           </View>
