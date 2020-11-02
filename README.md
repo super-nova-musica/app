@@ -19,6 +19,7 @@ Projeto desenvolvido na Hackathon Code-Stage 2020 realizado pela **[Shawee][shaw
 
 ## **:rocket: Objetivo**
 
+A plataforma vem com o objetivo de melhorar a experiência de consumo e impulsionar o mercado da música. A SuperNova é um app mobile criado para promover e aumentar a visibilidade de novos talentos, atraindo profissionais da música, gravadoras, A&R e ouvintes, com o objetivo de melhorar a experiência de consumo e impulsionar o mercado da música através de dados de consumo utilizando Inteligência Artificial e Machine Learning.
 
 ## **:computer: Tecnologias**
 
