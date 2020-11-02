@@ -7,7 +7,7 @@
    "scheme": "mycoolredirect",
     "splash": {
       "image": "./assets/splash.png",
-      
+      "resizeMode": "contain",
       "backgroundColor": "#8743ed",
       "opacity":"0.8"
     },

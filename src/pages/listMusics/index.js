@@ -11,9 +11,9 @@ class App extends Component {
   
   state = {
     data: [
-      { id: 0, name: 'Feel It Still', city: 'Portugal. The Man', views: '320,7k', date: '2:43'},
-      { id: 1, name: 'Feel It Still', city: 'Portugal. The Man', views: '320,7k', date: '2:43'},
-      { id: 2,name: 'Feel It Still', city: 'Portugal. The Man', views: '320,7k', date: '2:43'},
+      { id: 0, name: 'Major Lazer', city: 'Eduardo Tomacheski', views: '320,7k', date: '2:43'},
+      { id: 1, name: 'Feel It Still', city: 'Leo David', views: '320,7k', date: '2:43'},
+      { id: 2,name: 'Feel l', city: 'Paulo Mendes', views: '320,7k', date: '2:43'},
     ],
   };
   renderItem = ({ item }) => (

@@ -5,8 +5,16 @@ import { Audio } from 'expo-av'
 import Styles from './styles'
 
 import Cover3 from '../../assets/Cover3.png'
+import ouvir from '../../assets/ouvir.png'
 export default class App extends Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+          count: 0,
+          like:0,
+          play: false
+        };
+    }
     async componentDidMount(){
         Audio.setAudioModeAsync({
             allowsRecordingIOS:false,
@@ -28,14 +36,14 @@ export default class App extends Component {
     }
     playSound(){
         this.sound.playAsync()
+        this.setState({ play: true })
     }
-    constructor(props) {
-        super(props);
-        this.state = {
-          count: 0,
-          like:0
-        };
+    pauseSound(){
+        this.sound.pauseAsync()
+        this.setState({ play: false })
+
     }
+    
     render(){
         return (
             <SafeAreaView style={Styles.container}>
@@ -70,10 +78,10 @@ export default class App extends Component {
                     }
                     <View style={Styles.playerTextView}>
                         <Text style={Styles.playerText}>
-                            Is It Cold In The Water?
+                            Major Lazer
                         </Text>
                         <Text style={Styles.playerText2}>
-                            Sophie
+                            Eduardo Tomacheski
                         </Text>
                     </View>
                     <FontAwesome5 name="comment" size={34} color="#8C31FF" style={Styles.playerComment}/>
@@ -264,17 +272,29 @@ export default class App extends Component {
                             Próxima
                         </Text>
                     </TouchableOpacity>
+                    <Image source={ouvir} style={Styles.header}/>
                 </View>
                 <View style={Styles.playerFooter}>
                     <View>
                         <Feather name="repeat" size={36} color="#8C31FF"/>
                     </View>
-                    <TouchableOpacity 
-                        style={Styles.playerFooterPlay}
-                        onPress={() => this.playSound(this)}
-                    >
-                        <Entypo name="controller-play" size={36} color="#8C31FF" />
-                    </TouchableOpacity>
+                    
+                    {this.state.play === false ?
+                        <TouchableOpacity 
+                            style={Styles.playerFooterPlay}
+                            onPress={() => this.playSound(this)}
+                        >
+                            <Entypo name="controller-play" size={36} color="#8C31FF" />
+                        </TouchableOpacity>
+                        : 
+                        <TouchableOpacity 
+                            style={Styles.playerFooterPlay}
+                            onPress={() => this.pauseSound(this)}
+                        >
+                            <AntDesign name="pause" size={36} color="#8C31FF" />
+                        </TouchableOpacity>
+                    
+                        }  
                     <View style={Styles.playerFooterMore}>
                         <Feather name="more-horizontal" size={36} color="#8C31FF" />
                     </View>

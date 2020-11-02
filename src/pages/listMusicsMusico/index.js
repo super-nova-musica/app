@@ -1,7 +1,7 @@
 import React, { Component, useEffect  } from 'react';
 
 import { View, Text, FlatList, StyleSheet,Image, SafeAreaView,TextInput, TouchableOpacity } from 'react-native';
-import { AntDesign, Feather, FontAwesome  } from '@expo/vector-icons';
+import { AntDesign, Feather, FontAwesome, MaterialCommunityIcons  } from '@expo/vector-icons';
 import Styles from './styles'
 import { useNavigation } from '@react-navigation/native'
 import Cover from '../../assets/Cover.png'
@@ -11,7 +11,7 @@ import axios from 'axios'
 class App extends Component {
   state = {
     data: [
-      { id: 0, name: 'Feel It Still', city: 'Eduardo, Tomacheski', views: '320,7k', date: '2:43'},
+      { id: 0, name: 'Major Lazer', city: 'Eduardo, Tomacheski', views: '320,7k', date: '2:43'},
       { id: 1, name: 'Modern Jesus', city: 'Eduardo, Tomacheski', views: '30,7k', date: '4:35'},
       { id: 2,name: 'So Young', city: 'Eduardo, Tomacheski', views: '20,7k', date: '5:30'},
     ],
@@ -43,7 +43,7 @@ class App extends Component {
     >
       <Image source={Cover} style={Styles.images}/>
       <View>
-        <Text style={Styles.city}>{item.city}</Text>
+        <Text style={Styles.city}> {this.state.user.name}</Text>
         <Text style={Styles.name}>{item.name}</Text>
         <Text style={Styles.views}>
         <AntDesign name="caretright" size={14} color="#8C31FF" />
@@ -52,10 +52,11 @@ class App extends Component {
       </View>
       <View style={Styles.more}>
         <Text style={Styles.city} >{item.date}</Text>
-        <Feather name="more-horizontal" size={24} color="#8C31FF" style={Styles.moreIcon}/>
+        
+          <Feather name="more-horizontal" size={24} color="#8C31FF" style={Styles.moreIcon}/>
       </View>
-      
     </TouchableOpacity>
+      
   );
 
   render (){
@@ -63,7 +64,13 @@ class App extends Component {
     return (
       <SafeAreaView>
         <View style={Styles.header}>
-    <Text style={Styles.headerText}>Seja bem-vindo, {this.state.user.name}</Text>
+          <Text style={Styles.headerText}>Seja bem-vindo, {this.state.user.name}</Text>
+          <TouchableOpacity 
+            onPress={() => this.props.navigation.navigate('Home')}
+            style={Styles.logout}
+          >
+          <MaterialCommunityIcons name="logout" size={28} color="#8C31FF" />
+          </TouchableOpacity>
         </View>
         <View style={Styles.newMusic}>
           <Image source={Cover} style={Styles.images}/>

@@ -7,6 +7,16 @@ export default StyleSheet.create({
   },
 
   header: {
+    display:'flex',
+    flexDirection: 'row',
+    marginTop: 50,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    borderColor: '#8C8C8C',
+  },
+  logout:{
+    marginRight: 15,
+    marginLeft: 'auto'
   },
   inputView: {
     display:'flex',
@@ -44,13 +54,10 @@ export default StyleSheet.create({
     paddingRight: 10,
   },
   headerText:{
-    marginTop: 50,
     fontSize: 18,
     color: '#8C31FF',
     textAlign: 'center',
-    paddingBottom: 10,
-    borderBottomWidth: 1,
-    borderColor: '#8C8C8C',
+    
   },
   listPopular:{
     display: 'flex',
